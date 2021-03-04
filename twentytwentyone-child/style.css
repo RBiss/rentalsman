@@ -1,0 +1,577 @@
+/*
+Theme Name:   twentytwentyone child theme
+Description:  Write here a brief description about your child-theme
+Author:       admin
+Author URL:   http://127.0.0.1/wp
+Template:     twentytwentyone
+Version:      1.0
+License:      GNU General Public License v2 or later
+License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  twentytwentyone-child
+*/
+
+
+/* Write here your own personal stylesheet */
+
+:root {
+    --primary: #6f42c1;
+    --secondary: #4f4f4f;
+    --light: #f6f6f6;
+    --dark: #202c39ff;
+    --gunmetal: #202c39ff;
+    --charcoal: #283845ff;
+    --space: rgb(255, 255, 255);
+    --card: rgb(100, 112, 100);
+    --antique-brass: #cb997eff;
+    --desert-sand: #ddbea9ff;
+    --isabelline: #f0efebff;
+    --ash-gray: #b7b7a4ff;
+    --bg-primary: #ccddcc;
+    --font-normal: 1em;
+    --font-small: 0.8125rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+html {
+    line-height: 1.15;
+    margin-top: 0px !important;
+}
+
+body {
+    background: rgb(255, 255, 255) !important;
+    /* background: url('http://127.0.0.1/wp/wp-content/uploads/2021/03/condolarge.jpg') !important; */
+    color: var(--secondary);
+    overflow-x: hidden;
+    font-family: "Roboto";
+    background-size: auto;
+    padding-top: 70px;
+    margin-top: 0px !important;
+}
+
+.main-wrapper {
+    margin-top: -2em;
+    background: var(--gunmetal) !important;
+    /* background: url('http://127.0.0.1/wp/wp-content/uploads/2021/03/condoheader2.jpg') !important; */
+    max-width: var(--content-max-width);
+}
+
+.container {
+    background: transparent !important;
+}
+
+.container-lg {
+    background: transparent !important;
+    text-align: right;
+}
+
+article {
+    clear: both;
+    background: #FFF !important;
+    margin: 0 auto;
+}
+
+.front {
+    clear: both;
+    background: rgb(238, 237, 237) !important;
+    margin: 0 auto;
+}
+
+.hero {
+    background: url('http://127.0.0.1/wp/wp-content/uploads/2021/02/hero12.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    max-height: 300px !important;
+}
+
+.top-hero {
+    padding: 1em;
+    font-size: 1.2em;
+    color: rgb(219, 144, 5) !important;
+    /* height: 700px !important; */
+}
+
+.hero h1 {
+    font-family: Helvetica, Arial, sans-serif!important;
+    color: rgb(219, 144, 5);
+    font-size: 1.2em;
+}
+
+.hero h2 {
+    font-family: Helvetica, Arial, sans-serif!important;
+    color: rgb(219, 144, 5);
+    font-size: 1.2em;
+    padding-top: 1.0em;
+}
+
+.navbar {
+    font-family: 'Roboto';
+    background: url('http://127.0.0.1/wp/wp-content/uploads/2021/03/condoheader2.jpg');
+}
+
+.header {
+    background: url('http://127.0.0.1/wp/wp-content/uploads/2021/03/condoheader2.jpg');
+}
+
+.mr-auto {
+    background: transparent !important;
+}
+
+.navbar-nav.nav-item {
+    background: transparent !important;
+    /* position: absolute; */
+}
+
+.navbar-expand-xl {
+    background: transparent !important;
+}
+
+.navbar-custom {
+    font-family: 'Roboto';
+    background: transparent!important;
+    color: #FFF;
+    max-height: 100px;
+    text-align: right;
+    padding: 1em 1.5em 1em 1.5em;
+    margin: -1em -2.0em;
+}
+
+#navbarText.collapse.navbar-collapse {
+    text-align: right;
+}
+
+ul.navbar.nav.mr-auto {
+    text-align: right;
+}
+
+
+/* .navbar-custom:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewy(-3.0deg);
+  transform-origin: 100%;
+  z-index: -1;
+}  */
+
+a {
+    color: var(--desert-sand);
+}
+
+h1 {
+    font-size: 1.0em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--isabelline);
+    font-weight: bold
+}
+
+.btn {
+    font-weight: bold;
+    padding: .375rem 1rem;
+    height: 2.75rem;
+    transition: all 0.4s ease-in-out
+}
+
+.btn:focus,
+.btn.focus {
+    box-shadow: none !important
+}
+
+.btn-primary {
+    color: #fff
+}
+
+.btn-back {
+    font-family: Helvetica, Arial, sans-serif!important;
+    background: rgb(230, 142, 10);
+    color: #FFF;
+}
+
+.theme-bg-light {
+    /* background: var(--light) !important; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--isabelline) !important;
+}
+
+.theme-bg-light h1 {
+    color: white !important;
+}
+
+.theme-bg-dark {
+    background: url('http://127.0.0.1/wp/wp-content/uploads/2021/03/condoheader2.jpg');
+}
+
+.mt-3 {
+    margin-bottom: 2em;
+}
+
+.card.mb-2 {
+    background: var(--light);
+}
+
+.hero-place img {
+    display: none;
+}
+
+.card {
+    display: flex;
+    background: var(--light) !important;
+    transform: scale(.95);
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card:hover {
+    transform: scale(1.00);
+    transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+    transition: transform .5s ease, -webkit-transform .5s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card-body {
+    text-align: center;
+    background: rgb(219, 144, 5);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.card-img-top {
+    margin-bottom: 1.5em;
+}
+
+.card-body:hover {
+    background: var(--gunmetal);
+    transform: scale(1.0);
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+    color: rgb(209, 149, 37)
+}
+
+.card-title {
+    font-family: Helvetica, Arial, sans-serif!important;
+    flex-wrap: wrap;
+    flex: 1 0;
+    color: #fff;
+}
+
+.card-text {
+    color: #fff;
+}
+
+.carousel-inner .carousel-item {
+    background: var(--light) !important;
+    transition: -webkit-transform 5s ease;
+    transition: transform 5s ease;
+    transition: transform 5s ease, -webkit-transform 5s ease;
+    overflow: hidden;
+}
+
+.logo {
+    width: 78px;
+}
+
+.page-title {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    transition: all .2s;
+}
+
+.page-title h1 {
+    color: #FFF;
+}
+
+.sticky {
+    padding: 1em 0 !important;
+}
+
+.page-title .heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.footer {
+    background: var(--gunmetal);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer a {
+    color: #fff
+}
+
+.left_header {
+    font-size: .8em;
+    width: 55%;
+    position: relative;
+    top: 10;
+    margin-left: 6%;
+    float: left;
+}
+
+.right_header {
+    position: relative;
+    top: 10;
+    font-size: .8em;
+    width: 35%;
+    margin-left: 2%;
+    float: left;
+}
+
+h1.entry-title {
+    font-size: 2.2em;
+    margin-top: 0em;
+    padding-top: 2em;
+    font-family: Helvetica, Arial, sans-serif!important;
+}
+
+.img-list {
+    margin-top: -1em;
+    margin-left: .3em;
+    margin-bottom: 1em;
+    /* margin-right: 1em; */
+    max-height: 90px;
+    padding: 0 1em 0 0;
+    position: relative;
+    float: left;
+}
+
+.content .post .title {
+    /* font-size: 1.275rem */
+    font-size: var(--font-small);
+}
+
+.content .post .title a {
+    color: var(--gray-dark)
+}
+
+.content .post .title a:hover {
+    color: var(--gray-dark)
+}
+
+.content .post .post-thumb {
+    max-width: 160px;
+    border-radius: 2px
+}
+
+.content .post .intro {
+    font-size: 0.875rem
+}
+
+.content .post .more-link {
+    font-size: var(--font-small);
+}
+
+.meta {
+    color: #8f8f8f;
+    font-size: var(--font-small);
+}
+
+.meta span {
+    display: inline-block;
+    margin-right: .25em;
+}
+
+.meta span a {
+    color: #8f8f8f
+}
+
+.meta span.tag {
+    background-color: var(--lightgray);
+    padding: 0 .5em;
+    border-radius: 5px;
+}
+
+.meta span a:hover {
+    color: var(--secondary)
+}
+
+.meta span:last-child:after {
+    display: none
+}
+
+.blog-nav .nav-link {
+    background: var(--primary);
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    position: relative
+}
+
+.blog-nav .nav-link:hover {
+    background: var(--secondary);
+}
+
+.blog-nav .nav-link-prev {
+    border-right: 1px solid var(--secondary);
+}
+
+.blog-nav .arrow-prev {
+    position: absolute;
+    left: 1rem;
+    top: 1.25rem;
+    color: #fff
+}
+
+.blog-nav .arrow-next {
+    position: absolute;
+    right: 1rem;
+    top: 1.25rem;
+    color: #fff
+}
+
+.content .title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #FFF;
+}
+
+.content .content-body p,
+.content .content-body li {
+    font-size: 1.125rem;
+    line-height: 1.6
+}
+
+.content .content-body h1 {
+    font-size: 2.125rem
+}
+
+.content .content-body h2 {
+    font-size: 2rem
+}
+
+.content .content-body h3 {
+    font-size: 1.75rem
+}
+
+.content .content-body h4 {
+    font-size: 1.5rem
+}
+
+.content .content-body h5 {
+    font-size: 1.25rem
+}
+
+.content .content-body h6 {
+    font-size: 1.125rem
+}
+
+.content .image-caption {
+    color: #8f8f8f;
+    font-size: 0.875rem
+}
+
+.content .image-caption a {
+    color: #8f8f8f;
+    text-decoration: underline
+}
+
+.content .image-caption a:hover {
+    color: var(--secondary)
+}
+
+.content .blockquote {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border-left: 2px solid var(--gray-dark);
+    font-size: 1.5rem
+}
+
+.content .blockquote p {
+    font-size: 1.5rem
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .social-list a {
+        transition: none
+    }
+    .btn {
+        transition: none
+    }
+}
+
+@media (min-width: 576px) {
+    .intro h2 {
+        color: var(--desert-sand);
+        font-size: 1.8em;
+    }
+    h1 {
+        font-size: 2.0em;
+    }
+}
+
+@media (min-width:768px) {
+    .hero-place img {
+        display: block;
+    }
+    .top-hero h2 {
+        color: var(--desert-sand);
+        font-size: 2em;
+    }
+    .top-hero h1 {
+        font-size: 2.5em !important;
+    }
+    .footer {
+        background-color: #34495E;
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .page-title {
+        position: relative;
+    }
+    /* .header {
+position: sticky;
+width: inherit;
+height: auto
+} */
+    .site-title {
+        width: 100%;
+        left: 0;
+        top: 0rem;
+        color: var(--white);
+        font-size: 1.5em;
+        display: block;
+    }
+    /* .header .btn-primary {
+width: 100%
+}
+.header .navbar {
+padding: 1rem
+} */
+    .main-wrapper {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767.98px) {}
